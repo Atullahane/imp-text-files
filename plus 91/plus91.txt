@@ -1,0 +1,106 @@
+
+attendence
+
+ https://inside.plus91.in/  
+
+Test@12345
+https://events.atlassian.com/team22
+
+date piker
+https://jqueryui.com/datepicker/#icon-trigger
+https://www.educba.com/html-colspan/
+https://drive.google.com/open?id=1q6wO3lkIqyLMs7NxwX4AJCbIqR9MQoUf
+
+hi sir i am stuck in how to set code of date picker
+hr policies
+
+
+1. Total Experience - 1.2 years in php
+
+2. Experience in Plus91 - recently join on 11 jan 2022
+
+3. Current residential address - peth galli, near police station, Ambad 
+Dist- Jalna Maharashtra 431204.
+
+4. Permanent Address - peth galli, near police station, Ambad 
+Dist- Jalna Maharashtra 431204.
+
+
+
+atul@DESKTOP-I39NI5C:~$ sudo ufw app list
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  OpenSSH
+atul@DESKTOP-I39NI5C:~$ sudo ufw allow 'Apache Full'
+WARN: initcaps
+[Errno 2] iptables v1.8.4 (legacy): can't initialize iptables table `filter': Table does not exist (do you need to insmod?)
+Perhaps iptables or your kernel needs to be upgraded.
+
+Skipping adding existing rule
+atul@DESKTOP-I39NI5C:~$ sudo systemctl status apache2
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+atul@DESKTOP-I39NI5C:~$
+
+
+
+
+Hello Mam,
+
+I need a laptop for working.
+
+
+
+
+
+
+
+Hello Mam,
+
+Here I am submitting the required details which you asked me in mail.
+
+Please find the attached files, and please let me know if I need to submit any additional documents.
+
+1- Pan card color copy In PDF
+2- Aadhar card Color copy in PDF 
+3-Married - Yes
+4-Mobile No- 8793137898
+5-ICICI Salary Bank account details
+	Account Number: 200801003503
+	Branch Name   :Jalna-Ambad
+	IFSC Code     :ICIC0002008
+6-PF account UAN Number- No 
+
+
+Thanks Regards,
+Atul Lahane.
+
+
+
+
+Hi Sir,
+
+As per our discussion, I have completed the task.
+
+I have shared a UI screen shot of Index, Action and Fetch files in the attached file.
+
+Please find attached files and let me know if any changes are required.
+
+Thanks & Regards,
+Atul Lahane.
+
+
+
+
+https://bitbucket.org/plus91-team/medixcel-base/src/develop/
+
+https://demo2.medixcel.in/CPH/cphLogin.php?alerts=UzE.
+
+
+
+
+
+
+

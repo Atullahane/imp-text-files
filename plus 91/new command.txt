@@ -1,0 +1,239 @@
+1)cat command
+
+$ cat > atul    	-create file &write
+$ cat >>atul		-apend file to write
+$ cat atul		-read file
+$ cat atul > file1	-copy 
+$ ls			-list all file
+
+2)touch command
+
+$ touch file2 file3
+
+3)vi or  vim  command
+
+$ vi atul
+
+4)nano command
+
+$ nano atul
+
+5)other commands
+
+ clear			-clear screen
+ state atul
+ states atul
+ ls -a			-hidden file show
+ history		-all command history
+
+ mkdir dir1		-make diectory (folder)
+ 
+ $ mkdir -p dir5/dir6 	-make diectory/dir
+ cd dir1			-currnt directory
+ cd..			-go to parent directory
+ 
+ cp file1 file4		-copy 
+ 
+ mv file4 dir1		-move fle4 to dir1
+   
+ rmdir dir2		-delete dir2
+ 
+ ls -l			-long list
+ ls -al			-all hiden file long list
+
+ head file1		-10 line from 1st line
+ tail file1		-10 line from last line
+ more file1
+
+ hostname		-hostname
+ ifconfig		-ipaddress
+ cat /etc/os realease
+ cat/etc/os-rel*
+ whoami			-user
+ which xyz		-to check 1 packeg insall or not
+ 
+6)importent command for virsion
+
+$ php -v
+sudo apt install php7.4-cli
+
+$ mysql --v
+sudo apt install mysql-client-core-8.0
+
+$ apache2 -v
+sudo apt install apache2-bin
+
+$ tree
+sudo apt install tree
+
+7)imp command
+$ sudo useradd avi		-to add user
+$ cat /etc/passwd		-to check user 
+
+$ groupadd grop1		-to add group
+$ cat /etc/group		-to check group
+
+$ ln -s file1 softfile1 	-to create soft file like sortcut
+$ ln file2 backupfile2		-to create backupfile
+
+tar -cvf dir1.tar dir1		-to create tar fle (like zipfile)
+gzip dir1.tar			-to create zipfile and compress
+
+gunzip dir1.tar.gz		-unzip zipfile 
+tar -xvf dir1.tar		-tar file to normal file
+
+wget url 			-download file
+ sudo dpkg -i teamviewer_linux_x64.deb
+
+
+8)access mode / permissions
+[u =owner/user , g= group user,o= other user, a= all user]
+chmod
+$ chmod 777 file3
+
+chown
+$ sudo chown avinash file3
+
+chgrp
+$ sudo chgrp avi file3
+
+
+1)apache mysql php
+apache
+
+sudo apt update
+sudo apt install apache2
+sudo ufw app list
+sudo ufw allow 'Apache Full'
+sudo ufw status
+sudo systemctl status apache2
+ or
+
+sudo apt install lamp-server^
+sudo service apache2 start
+sudo service apache2 status 
+sudo service apache2 stop
+
+mysql
+sudo service mysql start
+sudo service mysql status 
+
+or
+sudo apt install mysql-server
+sudo service mysql status
+sudo service mysql start
+sudo mysql_secure_installation(with password)
+  	sudo vim /etc/phpmyadmin/config.inc.php
+
+php
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+sudo apt remove phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+	sudo nano /var/www/html/info.php
+
+appache config,root,errorlog
+/etc/apache2/apache2.conf
+/var/www/html
+/var/log/apache2/error.log
+
+
+mysql config,root,errorlog
+/etc/mysql/my.cnf
+/var/lib/mysql
+/var/log/mysql/error.log
+
+php config,root,errorlog
+
+/var/www/html
+/etc/php/5.6/cgi/php.ini
+
+/var/www/html/hello.php
+
+/var/log/apache2/error.log
+
+
+//////////******mysql imp*******//////////
+
+ CREATE DATABASE contacts_db;
+$ sudo mysql -u root -p
+mysql> SHOW DATABASES;
+
+mysql> CREATE DATABASE mydatabase;
+
+USE mydatabase;
+
+CREATE TABLE books(
+ title VARCHAR(50) NOT NULL,
+ price INT NOT NULL,
+ language VARCHAR(50) DEFAULT "ENGLISH",
+ author VARCHAR(50) NOT NULL);
+
+DESCRIBE books;
+
+INSERT INTO books VALUE("Book title",50.00,"HINDI","Author Name");
+
+SELECT * FROM books;
+
+/**************************/
+/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf
+
+
+mysqldump
+
+
+mysqldump -u (user) -p(passwd) -h (host_or_IP) database_to_backup > backup_file.sql
+
+example:
+
+mysqldump -u god -pheaven -h 10.0.10.10 accounting > accounting_20141209.sql
+
+for single database
+sudo mysqldump -u root -h localhost -p mydatabase > mydatabase.sql
+
+sudo mysqldump -u root -h localhost -p mydb1 > mydatabase.sql
+sudo mysqldump -u root -h localhost -p mydatabase > db1.sql
+ls -lh mydatabase.sql
+
+for multiple database
+sudo mysqldump -u root -h localhost -p --database mydatabase contacts_db > all_db_backup.sql
+contacts_db
+for All database
+sudo mysqldump -u root -h localhost -p --all-database > all_db_backup.sql
+
+sudo mysqldump -u root -h localhost -p --all-database > var/www/all_db_backup.sql
+var/www/all_db_backup.sql
+
+for database and table
+sudo mysqldump -u root -h localhost -p db1 wp_post wp_user > two_tables.sql
+ls -lh *.sql
+
+for restore
+for all restore
+sudo mysqldump -u root -h localhost -p < all_db.sql
+
+for single restore
+sudo mysqldump -u root -h localhost -p db < db1.sql
+
+for multiple restore
+sudo mysqldump -u root -h localhost -p < two_db.sql
+
+for database and table restore
+sudo mysqldump -u root -h localhost -p db1 < two_tables.sql
+
+
+
+/**************cron job *******************/
+sudo service cron status
+sudo service cron start
+crontab -l
+crontab -e
+55 14 * * * touch abc
+
+
+***** cd/home/atul/scripts && ./create_file.sh
+*(min)	*(h) 	*(day of the month 1-31)	*(month 1-12)	*(dow 0-6 sunday=0)
+  https://crontab.cronhub.io/
+
+55 14 * * * touch abc
+
+  sudo apt dpkg teamviewer_linux_x64.deb
+sudo apt insall teamviewer_linux_x64.deb

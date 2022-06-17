@@ -1,0 +1,51 @@
+https://codewithharry.com/blogpost/install-phpmyadmin-ubuntu
+
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
+sudo mysql
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'MyStrongPassword1234$';
+sudo mysql -u root -p
+
+for other than root user
+CREATE USER 'harry'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'MyStrongPassword1234$';
+GRANT ALL PRIVILEGES ON *.* TO 'harry'@'localhost' WITH GRANT OPTION;
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'AtulLahne@9295';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'MyStrongPassword1234$';
+
+
+$ sudo mysql -u root -p
+mysql> SHOW DATABASES;
+
+CREATE DATABASE contacts_db;
+
+USE contacts_db;
+
+CREATE TABLE contact(
+ contact_no INT NOT NULL);
+
+DESCRIBE contact;
+
+INSERT INTO contact VALUE(982144444);
+
+SELECT * FROM contact ;
+
+
+
+
+sudo mysqldump -u root -h localhost -p contacts_db> contacts_db.sql
+
+sudo mysqldump -u root -h 10.10.10.5  -p contacts_db< contacts_db.sql
+
+
+sudo service cron status
+sudo service cron start
+crontab -l
+crontab -e
+0 11 */ * * sudo service apache2 restart
+
+

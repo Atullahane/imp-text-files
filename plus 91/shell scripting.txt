@@ -1,0 +1,69 @@
+test
+
+#!/bin/bash
+
+echo hellow
+~           
+
+variable.sh
+#!/bin/bash
+
+name=atul
+age=28
+echo my name is $name and age is $age
+
+ifelse.sh
+#!/bin/bash
+echo what is your age
+read age
+if [ $age -ge 18 ]
+then
+        echo you can vote
+else
+       echo you can not vote
+fi
+
+
+swich.sh
+#!/bin/bash
+
+echo press any option
+echo 1 = show date
+echo 2 = list file
+read choice
+case $choice in
+        1)date;;
+        2)ls -l;;
+        *)echo not option
+esac
+~     
+
+forloop.sh
+#!/bin/bash
+
+for num in {1..10}
+do
+        echo number is $num
+done
+
+whileloop.sh
+#!/bin/bash
+
+num=10
+count=0
+while [ $count -le $num ]
+do
+        echo $count
+        let count++
+done
+
+iterate.shvi
+#!/bin/bash
+
+names="/home/atul/scripts/name"
+
+for name in $(cat $names)
+do
+        echo casts in movie is $name
+done
+

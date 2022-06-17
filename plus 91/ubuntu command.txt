@@ -1,0 +1,184 @@
+1)cat command
+
+$ cat > atul    	-create file &write
+
+$ cat >>atul		-apend file to write
+
+$ cat atul		-read file
+
+$ cat atul > file1	-copy 
+
+$ ls			-list all file
+
+2)touch command
+
+$ touch file2 file3
+
+3)vi or  vim  command
+
+$ vi atul
+
+4)nano command
+
+$ nano atul
+
+5)other commands
+
+ clear			-clear screen
+ state atul
+ states atul
+ ls -a			-hidden file show
+ history		-all command history
+
+ mkdir dir1		-make diectory (folder)
+ ls			-list
+ $ mkdir -p dir5/dir6 	-make diectory/dir
+ cd dir1			-currnt directory
+ cd..			-go to parent directory
+ cd atul
+ cd ..			-go to parent directory
+ cp file1 file4	-copy 
+ ls
+ mv file4 dir1	-move fle4 to dir1
+   
+ rmdir dir2		-delete dir2
+ 
+ ls -l			-long list
+ ls -al		-all hiden file long list
+
+ head file1
+ tail file1
+ more file1
+
+ hostname		-hostname
+ ifconfig		-ipaddress
+ cat /etc/os realease
+ cat/etc/os-rel*
+ whoami			-user
+ which xyz
+ 
+7)importent command
+
+$ php -v
+
+sudo apt install php7.4-cli
+
+$ mysql --v
+
+sudo apt install mysql-client-core-8.0
+
+$ apache2 -v
+
+sudo apt install apache2-bin
+
+$ tree
+
+sudo apt install tree
+
+8)new command
+
+~$ sudo useradd avi		-(permition denied)
+$ cat /etc/passwd	-to check user 
+
+$ groupadd grop1
+groupadd: Permission denied.
+groupadd: cannot lock /etc/group; try again later.
+
+$ cat /etc/group	-to check group
+
+~$ ln -s file1 softfile1 	-to create soft file like sortcut
+
+ ln file2 backupfile2		-to create backupfile
+ ls
+ tar -cvf dir1.tar dir1		-to create tar fle (like zipfile)
+ ls
+ gzip dir1.tar			-to create zipfile and compress
+ ls
+ gunzip dir1.tar.gz		-unzip zipfile 
+ ls
+ tar -xvf dir1.tar		-tar file to normal file
+ ls
+
+wget url 			-download file
+
+9)access mode / permissions
+[u =owner/user , g= group user,o= other user, a= all user]
+chmod
+$ chmod 777 file3
+
+chown
+$ chown avi file3
+chown: invalid user: ‘avi’
+
+chgrp
+$ chgrp avi file3
+chgrp: invalid group: ‘avi’
+
+
+ apt update -y
+    4  tree
+    5  apt install tree
+    6  tree
+    7  hostname
+    8  hostname -i
+    9  ifconfig
+   10  cat /etc/os-release
+
+yum list installed
+apt list installed
+
+apt install httpd
+service httpd status
+service httpd start
+apt updated httpd
+apt remove httpd
+
+10)most imp command
+https://www.cloudbooklet.com/how-to-install-lamp-apache-mysql-php-in-ubuntu-20-04/
+
+1} apache
+
+su1do apt update
+sudo apt upgrade
+
+sudo apt install apache2
+
+sudo ufw app list
+
+			Output
+				Available applications:
+ 				 Apache	-This profile opens port 80 (normal, unencrypted web traffic)
+  				 Apache Full	-This profile opens both port 80 (normal, unencrypted web traffic) and port 443 (TLS/SSL encrypted traffic)
+ 				 Apache Secure-This profile opens only port 443 (TLS/SSL encrypted traffic)
+  				OpenSSH-This profile opens port 22 for SSH access.
+
+sudo ufw allow 'Apache Full'
+
+sudo ufw status
+
+sudo systemctl status apache2	-check apache installation
+
+sudo service apache2 start
+sudo service apache2 restart
+sudo service apache2 status
+
+
+2} mysql
+
+sudo apt install mysql-server
+sudo service mysql status
+sudo service mysql start
+sudo mysql_secure_installation(with password)
+
+3}php
+	//sudo apt install php libapache2-mod-php php7.4-mysql php7.4-common php7.4-
+sudo apt install php libapache2-mod-php php-mysql
+php -version
+sudo nano /var/www/html/info.php
+
+192.168.1.209
+
+https://devanswers.co/install-apache-mysql-php-lamp-stack-ubuntu-20-04/
+
+
+

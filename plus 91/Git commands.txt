@@ -1,0 +1,190 @@
+https://github.com/Atullahane/coders.git
+jxeNGm7FaQdUpwbMn7p9
+
+max_allowed_packet= 1024M
+
+https://bitbucket.org/dashboard/overview
+ insall git
+
+git --version
+
+which git
+
+git config --global user.name "atullahane"
+
+git config --global user.email "atul.lahane@plus91.in"
+
+git config --list
+
+
+1)how to start
+->create directory
+mkdir abc
+
+git init
+
+touch myfile.php
+
+git status
+
+git add .
+
+git commit -m "first msg"
+
+git status
+
+git log
+
+git show
+
+git show <commit id>
+
+git remote add origin <url repo>
+
+git push -u origin master(branch)
+
+git pull origin master
+
+
+2)how to ignor file
+
+vi .gitignore
+
+git add .gitignore
+
+git commit -m "msg for ignore file"
+
+git status
+
+3)how to show commit
+
+git log -1
+git log -2
+git log --online
+
+4)how to find perticlar commit
+
+git log --grip "ignore"
+
+
+5)Branches
+git branch
+
+git branch branch1
+
+git checkout branch1
+
+git branch -d branch1    //delete branch
+
+6)merge
+git merge branch1       //you are in master branch
+git log --online
+
+git push origin master
+
+
+7)gin conflict
+->it means file name are same and data diff
+->conflicts occure when you merge branches
+
+8)git stashing
+-to stash an item
+git stash
+
+to see stash item lst
+git stash list
+
+-to applay stash items
+git stash apply stash a{0}     //you cat add and commit
+
+-to clere stash items
+git stash clear
+
+
+9)git reset
+->it is powerful command that is used to undo local changes to the state of a git repo
+->it is used to delete file from staging area 
+->you can delete file from sage and working area
+-to reset staging area
+
+git reset
+
+-to reset both area(stage and working) at atime
+git reset --hard		//it is used before commit
+
+
+10)Git Revert
+-> the revert command helps you undo an existing commit
+->it is not delete any data in this proccess instead rather git created a new commit ,
+while the inclueded files revert to Their previous state.
+->so your version control history moves forword while the state of your file move backword .
+->it is used after commit
+commands
+
+sudo su
+cd atul(folder name)
+ls
+git status
+cat >newfile
+hello....
+git add .
+git commit -m "commit somthing"
+git log --online
+git revert<commit id>
+
+
+11)How to untrack file
+git clean -n  		(dry run)-working
+git clean -f 		(forcefuly )deleted
+
+12)Tags
+
+-to apply tag
+git tag -a <tag name> -m<message><commit id>
+
+-to see the tag list
+git tag
+
+-to see perticular commit content by using tag
+git show <tag name>
+
+-to delete tag
+git tag -d<tagname>
+
+
+13)Clone
+git clone<url of repo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+Ubuntu was developed by Canonical, which belongs to a Linux family, while Microsoft develops Windows10.
+
+Ubuntu is an open-source operating system, while Windows is a paid and licensed operating system.
+
+It is a very reliable operating system in comparison to Windows 10.
+
+Handling of Ubuntu is not easy; you need to learn lots of commands, while in Windows 10, handling and learning part is very easy.
+
+It is purely an operating system for programming purposes, while Windows can also be used for other things.
+
+MS Office doesn’t work properly in Ubuntu, while in Windows10 it will work excellent.
+
+Adobe and photoshoot will also not work much properly in Ubuntu, while Windows 10 supports it very well.
+
+Ubuntu kernel type is Monolithic while Windows 10 Kernel type is Hybrid.
+
+Ubuntu is much secure in comparison to Windows 10.
+
+Ubuntu userland is GNU while Windows10 userland is Windows Nt, Net.
+
+In Ubuntu, Browsing is faster than Windows 10.
+
+Updates are very easy in Ubuntu while in Windows 10 for the update every time you have to install the Java.
+
+Ubuntu is the first choice of all Developers and tester because of their several features, while they don’t prefer windows.
+
+In Ubuntu, your data privacy is much high compared to Windows 10 because any co-corporation does not own it.
+
+Ubuntu doesn’t have any visual assistant, while Windows has Cortana.
+
+Ubuntu has a Centralized Application installation, while in Windows 10, this kind of feature is not present.
+
+Ubuntu we can run without installing by using in a pen drive, but with Windows 10, this we can’t do.
+
+Ubuntu system boots are faster than Windows10.
+
+For a Gaming point of view, Windows10 is the best choice for Gamers.
